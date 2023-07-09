@@ -1,4 +1,4 @@
-/*TITULO Y FORMULARIO*/
+
 h1 {
     text-align: center;
     font-size: 1.2rem;
@@ -63,36 +63,32 @@ h1 {
 
 /*IMAGENES HEROE*/
 
-.imgheroe {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
-    max-width: 100%;
-    height: 300px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-snap-align: center;
-    -webkit-scrollbar: none;
-    margin-top: .7em;
-}
-
-article {
+.article_index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "quienes"
         "emprende"
         "unete";
     margin: .5rem 0rem;
 }
+.imgheroe {
+ display: flex;
+ align-content: center;
+ justify-content: center;
+ margin: .5rem 0rem;
+background-image: url(/img/fondo.jpg);
+}
+.carousel__img{
+    max-width: 100%;
+}
 
 /*SECCION QUIENES SOMOS*/
 
 .quienes {
     grid-area: quienes;
-    padding: .5em .5em 0em .5em;
+    padding: .0em .5em 0em .5em;
 }
 
 .quienes__div {
@@ -278,7 +274,7 @@ article {
 
 @media only screen and (min-width:401px) {/*TABLET STYLE */
 
-    article {
+    article__index {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto auto;
@@ -304,10 +300,6 @@ article {
     .form button {
         margin: .2em;
     }
-
-    .imgheroe {
-        height: 400px;
-    }
 }
 
 @media only screen and (min-width:961px) {/*DESKTOP STYLE */
@@ -318,12 +310,7 @@ article {
         grid-template-areas:
             "alquilar comprar emprender tipo ubicacion buscar";
     }
-
-    .imgheroe {
-        height: 700px;
-    }
-
-    article {
+    .article__index {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-template-rows: auto auto auto;
@@ -343,7 +330,9 @@ article {
             "quienes__div--p1 quienes__div--img1";
         margin-top: 0rem;
     }
-
+.article p{
+    font-size: 1rem;
+}
     .quienes__div--p1 {
         text-align: left;
     }
@@ -355,7 +344,7 @@ article {
         grid-template-areas:
             "emprende__h2 emprende__h2 emprende__h2"
             "emprende__div--img1  emprende__div--p emprende__div--img2";
-        align-items: stretch;
+        align-items: center;
     }
 
     .unete__div {

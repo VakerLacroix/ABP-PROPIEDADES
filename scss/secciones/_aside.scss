@@ -1,5 +1,6 @@
 .aside {
     grid-area: aside;
+    display: none;
 }
 
 .aside {
@@ -10,7 +11,6 @@
         "aside__1"
         "aside__2"
         "aside__3";
-    display: none;
     align-content: spa;
     align-items: center;
 }

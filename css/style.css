@@ -100,7 +100,6 @@ button.navbar-toggler {
     grid-template-rows: 100px;
     grid-template-areas: "logo nav redes"; } }
 
-/*TITULO Y FORMULARIO*/
 h1 {
   text-align: center;
   font-size: 1.2rem;
@@ -148,30 +147,27 @@ h1 {
   padding: .5em; }
 
 /*IMAGENES HEROE*/
-.imgheroe {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: flex-start;
-  max-width: 100%;
-  height: 300px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-snap-align: center;
-  -webkit-scrollbar: none;
-  margin-top: .7em; }
-
-article {
+.article_index {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: "quienes" "emprende" "unete";
   margin: .5rem 0rem; }
+
+.imgheroe {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: .5rem 0rem;
+  background-image: url(/img/fondo.jpg); }
+
+.carousel__img {
+  max-width: 100%; }
 
 /*SECCION QUIENES SOMOS*/
 .quienes {
   grid-area: quienes;
-  padding: .5em .5em 0em .5em; }
+  padding: .0em .5em 0em .5em; }
 
 .quienes__div {
   display: grid;
@@ -326,7 +322,7 @@ article {
 /* @media(min-width:400px){ MOBILE*/
 @media only screen and (min-width: 401px) {
   /*TABLET STYLE */
-  article {
+  article__index {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto;
@@ -339,9 +335,7 @@ article {
   .form input {
     margin: .2em; }
   .form button {
-    margin: .2em; }
-  .imgheroe {
-    height: 400px; } }
+    margin: .2em; } }
 
 @media only screen and (min-width: 961px) {
   /*DESKTOP STYLE */
@@ -349,9 +343,7 @@ article {
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "alquilar comprar emprender tipo ubicacion buscar"; }
-  .imgheroe {
-    height: 700px; }
-  article {
+  .article__index {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto auto;
@@ -363,6 +355,8 @@ article {
     grid-template-rows: auto auto;
     grid-template-areas: "quienes__h2 quienes__h2" "quienes__div--p1 quienes__div--img1";
     margin-top: 0rem; }
+  .article p {
+    font-size: 1rem; }
   .quienes__div--p1 {
     text-align: left; }
   .emprende__div {
@@ -370,7 +364,7 @@ article {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "emprende__h2 emprende__h2 emprende__h2" "emprende__div--img1  emprende__div--p emprende__div--img2";
-    align-items: stretch; }
+    align-items: center; }
   .unete__div {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -743,14 +737,14 @@ article {
   width: 100%; }
 
 .aside {
-  grid-area: aside; }
+  grid-area: aside;
+  display: none; }
 
 .aside {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "aside__1" "aside__2" "aside__3";
-  display: none;
   align-content: spa;
   align-items: center; }
 

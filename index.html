@@ -16,7 +16,7 @@
 <body>
     <!--LOGO Y BARRA DE NAVEGACION-->
     <header class="header">
-        <img class="logo" src="./img/ABP2.png" alt="logotipo empresa">
+        <img class="logo" src="./img/ABP2.png" alt="logotipo_empresa">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,16 +44,16 @@
         </nav>
         <ul class="redes__ul">
             <li><a href="https://www.instagram.com/" target="_blank"><img src=".//img/redessociales/instagram.png"
-                        alt=""></a></li>
+                        alt="instagram_img"></a></li>
             <li><a href="https://ar.linkedin.com//" target="_blank"><img src=".//img/redessociales/likedin.png"
-                        alt=""></a></li>
+                        alt="linkedin_img"></a></li>
             <li><a href="https://www.facebook.com/" target="_blank"><img src=".//img/redessociales/facebook.png"
-                        alt=""></a></li>
+                        alt="facebook_img"></a></li>
             <li><a href="https://web.whatsapp.com/" target="_blank"><img src=".//img/redessociales/whatsapp.png"
-                        alt=""></a></li>
+                        alt="whatsapp_img"></a></li>
         </ul>
     </header>
-    <main class="main">
+    <main>
         <br>
         <h1>ENCUENTRA TU ESPACIO IDEAL</h1>
         <form class="form" action="">
@@ -64,13 +64,51 @@
             <input class="Ubicacion" type="text" placeholder="Ubicacion">
             <button class="buscar">Buscar</button>
         </form>
+        <!--IMAGENES HEROE-->
         <div class="imgheroe">
-            <img src="./img/IMG HEROE 1.jpg" alt="edificio 1 ">
-            <img src="./img/IMG HEROE 2.jpeg" alt="edificio 2">
-            <img src="./img/IMG HEROE 3.jpg" alt="edificio 3">
-            <img src="./img/IMG HEROE 4.jpg" alt="edificio 4">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/IMG HEROE 1.jpg" class="carousel__img" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/IMG HEROE 2.jpeg" class="carousel__img" alt="edificio 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/IMG HEROE 3.jpg" class="carousel__img" alt="edificio 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/IMG HEROE 4.jpg" class="carousel__img" alt="edificio 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/IMG HEROE 5.jpg" class="carousel__img" alt="edificio 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
         </div>
-        <article>
+        <article class="article__index">
             <section class="quienes"> <!--SECCION QUIENES SOMOS-->
                 <div class="quienes__div">
                     <h2 class="quienes__h2">QUIENES SOMOS</h2>
@@ -89,9 +127,9 @@
                         atención personalizada y el trato amable hacen que la experiencia de búsqueda de propiedades sea
                         fluida y satisfactoria.
                     </p>
-                    <img class="quienes__div--img1" src="./img/quienesomos1.jpg" alt=" quienesimg1">
+                    <img class="quienes__div--img1" src="./img/quienesomos1.jpg" alt=" quienes_img1">
                     <!--imagen alternatitva-->
-                    <img class="quienes__div--img2" src="./img/quienesomos2.jpg" alt="quienesimg2">
+                    <img class="quienes__div--img2" src="./img/quienesomos2.jpg" alt="quienes_img2">
                 </div>
             </section>
             <section class="emprende"> <!--SECCION EMPRENDE-->
@@ -102,9 +140,9 @@
                         catálogo de propiedades comerciales para aquellos que deseen emprender o expandir sus ingresos.
                         ABP te guiará en cada paso del proceso, brindándote información detallada sobre ubicaciones
                         estratégicas y oportunidades de crecimiento.</p>
-                    <img class="emprende__div--img1" src="./img/emprende1.jpg" alt="">
+                    <img class="emprende__div--img1" src="./img/emprende1.jpg" alt="emprende_img1">
                     <!--imagen alternatitva-->
-                    <img class="emprende__div--img2" src="./img/emprende 2.jpg" alt="">
+                    <img class="emprende__div--img2" src="./img/emprende 2.jpg" alt="emprende_img2">
                 </div>
             </section>
             <section class="unete"> <!--SECCION UNETE-->
@@ -116,15 +154,15 @@
                         negociaciones y el cierre de la transacción, ABP se asegura de que cada cliente se sienta
                         respaldado y confiado en su elección. Si estas buscando oportunidades de ingreso, un socio
                         confiable y una experiencia inmobiliaria satisfactoria no dudes en unirte a nuestro equipo. </p>
-                    <img class="unete__div--img1" src="./img/unete.jpg" alt="">
+                    <img class="unete__div--img1" src="./img/unete.jpg" alt="unete_img1">
                     <!--imagen alternatitva-->
-                    <img class="unete__div--img2" src="./img/unete2.jpg" alt="">
+                    <img class="unete__div--img2" src="./img/unete2.jpg" alt="unete_img2">
                 </div>
             </section>
             <aside class="aside">
                 <section class=" aside__1">
                     <div class="aside__div">
-                        <img class="aside__img" src="../img/cabildo/estar.jpg" alt="">
+                        <img class="aside__img" src="../img/cabildo/estar.jpg" alt="cabildo_img1">
                         <ul class="aside__ul">
                             <li>Departamento en Venta</li>
                             <li>Belgrano. Capital Federal</li>
@@ -134,7 +172,7 @@
                 </section>
                 <section class=" aside__2">
                     <div class="aside__div">
-                        <img class="aside__img" src="../img/altolaguirre/altola1.jpg" alt="">
+                        <img class="aside__img" src="../img/altolaguirre/altola1.jpg" alt="altolaquirre_img1">
                         <ul class="aside__ul">
                             <li>Emprendimiento</li>
                             <li>Villa Urquiza. Capital Federal</li>
@@ -144,7 +182,7 @@
                 </section>
                 <section class=" aside__3">
                     <div class="aside__div">
-                        <img class="aside__img" src="../img/echeverria/estar1.jpg" alt="">
+                        <img class="aside__img" src="../img/echeverria/estar1.jpg" alt="echeverria_img2">
                         <ul class="aside__ul">
                             <li>Departamento en Venta</li>
                             <li>Belgrano. Capital Federal</li>
@@ -169,13 +207,13 @@
         <div>
             <ul class="footer__redes--ul">
                 <li><a href="https://www.instagram.com/" target="_blank"><img src=".//img/redessociales/instagram.png"
-                            alt=""></a></li>
+                            alt="instagram_img"></a></li>
                 <li><a href="https://ar.linkedin.com//" target="_blank"><img src=".//img/redessociales/likedin.png"
-                            alt=""></a></li>
+                            alt="linkedin_img"></a></li>
                 <li><a href="https://www.facebook.com/" target="_blank"><img src=".//img/redessociales/facebook.png"
-                            alt=""></a></li>
+                            alt="facebook_img"></a></li>
                 <li><a href="https://web.whatsapp.com/" target="_blank"><img src=".//img/redessociales/whatsapp.png"
-                            alt=""></a></li>
+                            alt="whatsapp_img"></a></li>
             </ul>
         </div>
     </footer>
