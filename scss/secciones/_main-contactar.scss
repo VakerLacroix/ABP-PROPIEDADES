@@ -1,0 +1,57 @@
+.formatocontactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(233, 233, 233);
+    width: 25%;
+}
+
+.contactanos div {
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+.contactanos p {
+    font-size: 20px;
+    width: 450px;
+    text-align: center;
+    margin: 20px;
+}
+
+.contactanos input {
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    overflow: visible;
+}
+
+.formcontactos {
+    height: 100px;
+    padding: 1px;
+}
+
+.botonformulario {
+    background-color: red;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.formatocontactos img {
+    width: 75%;
+}
+
+.mapa {
+    width: 100%;
+}

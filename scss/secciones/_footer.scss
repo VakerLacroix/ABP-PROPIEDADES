@@ -1,0 +1,48 @@
+.footer {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav redes";
+}
+
+.footer ul {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .7em;
+    margin: .0em;
+}
+
+.footer__redes--ul {
+    grid-area: redes;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5em;
+    margin: 0em 0em;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer li {
+    font-size: .8rem;
+    padding: .1em .3em;
+}
+
+.footer__nro {
+    color: red;
+
+}
+
+.footer__redes--ul img {
+    width: 1.5rem;
+}

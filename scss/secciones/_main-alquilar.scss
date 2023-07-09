@@ -1,0 +1,147 @@
+/*ALQUILER 1*/
+
+.alquiler1 h2 {
+    font-size: 50px;
+    color: gray;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.alqui1 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.descriptriun1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.alquiler1 li {
+    list-style: none;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.descriptriun1 a {
+    font-size: 30px;
+    margin-left: 1px;
+    padding: 15px;
+    background-color: red;
+    color: white;
+}
+
+.imgtriun1 {
+    width: 48%;
+    padding: 3px;
+}
+
+.imgtriun2 {
+    width: 25%;
+    padding: 3px;
+}
+
+.fondotriun1 {
+    background-color: rgb(221, 221, 221);
+    height: 100px;
+}
+
+.descriptriun2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.preciotriun1 {
+    color: red;
+    font-weight: bold;
+}
+
+/*ALQUILER 2*/
+
+.alquiler2 h2 {
+    font-size: 50px;
+    color: gray;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.alqui2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.descriplocal1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.alquiler2 li {
+    list-style: none;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.descriplocal1 a {
+    font-size: 30px;
+    margin-left: 1px;
+    padding: 15px;
+    background-color: red;
+    color: white;
+}
+
+.imglocalcab1 {
+    width: 48%;
+    padding: 3px;
+}
+
+.imglocalcab2 {
+    width: 25%;
+    padding: 3px;
+}
+
+.fondolocal1 {
+    background-color: rgb(221, 221, 221);
+    height: 100px;
+}
+
+.descriplocal2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.preciolocal1 {
+    color: red;
+    font-weight: bold;
+}

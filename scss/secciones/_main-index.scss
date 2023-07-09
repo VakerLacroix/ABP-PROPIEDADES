@@ -1,0 +1,382 @@
+/*TITULO Y FORMULARIO*/
+h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: .7em;
+    color: red;
+    font-weight: bold;
+    align-items: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "alquilar "
+        "comprar"
+        "emprender"
+        "tipo"
+        "ubicacion"
+        "buscar";
+    margin: 0em 1em;
+}
+
+.alquilar {
+    grid-area: alquilar;
+}
+
+.comprar {
+    grid-area: comprar;
+}
+
+.emprender {
+    grid-area: emprender;
+}
+
+.tipo {
+    grid-area: tipo;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+}
+
+.buscar {
+    grid-area: buscar
+}
+
+.form input {
+    text-align: center;
+    font-size: .8rem;
+    margin: .1em 0em;
+    padding: 1em;
+}
+
+.form button {
+    font-size: .8rem;
+    background-color: rgb(122, 122, 122);
+    color: white;
+    margin: .1em 0em;
+    padding: .5em;
+}
+
+/*IMAGENES HEROE*/
+
+.imgheroe {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    -webkit-scrollbar: none;
+    margin-top: .7em;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "quienes"
+        "emprende"
+        "unete";
+    margin: .5rem 0rem;
+}
+
+/*SECCION QUIENES SOMOS*/
+
+.quienes {
+    grid-area: quienes;
+    padding: .5em .5em 0em .5em;
+}
+
+.quienes__div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "quienes__h2"
+        "quienes__div--p1"
+        "quienes__div--img1";
+    align-items: center;
+}
+
+.quienes h2 {
+    grid-area: quienes__h2;
+    font-size: 1rem;
+    color: gray;
+    margin: .7em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.quienes__div--p1 {
+    grid-area: quienes__div--p1;
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: .8rem;
+    padding: 1em 1em;
+    background-color: rgb(233, 233, 233);
+    box-shadow: .7em .7em .7em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: .3em .7em;
+    align-items: center;
+}
+
+.quienes__div--p2 {
+    grid-area: quienes__div--p2;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: .8rem;
+    padding: 2em 2em;
+    background-color: rgb(233, 233, 233);
+    box-shadow: .7em .7em .7em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: .3em .7em;
+    display: none;
+    align-items: center;
+}
+
+.quienes__div--img1 {
+    grid-area: quienes__div--img1;
+    width: 100%;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+.quienes__div--img2 {
+    grid-area: quienes__div--img2;
+    width: 100%;
+    padding: .5em;
+    border-radius: 1em;
+    display: none;
+}
+
+/*SECCION EMPRENDE*/
+
+.emprende {
+    grid-area: emprende;
+    padding: .5em .5em 0em .5em;
+}
+
+.emprende__div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "emprende__h2"
+        "emprende__div--p"
+        "emprende__div--img1";
+    align-items: center;
+}
+
+.emprende h2 {
+    grid-area: emprende__h2;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin: .0em .0em .7em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.emprende__div--p {
+    grid-area: emprende__div--p;
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: .8rem;
+    padding: 1em 1em;
+    background-color: rgb(233, 233, 233);
+    box-shadow: .7em .7em .7em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: .3em .7em;
+    align-items: center;
+}
+
+.emprende__div--img1 {
+    grid-area: emprende__div--img1;
+    width: 100%;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+.emprende__div--img2 {
+    grid-area: emprende__div--img2;
+    width: 100%;
+    padding: .5em;
+    border-radius: 1em;
+    display: none;
+}
+
+/*SECCION UNETE*/
+
+.unete {
+    grid-area: unete;
+    padding: .5em .5em 0em .5em;
+}
+
+.unete__div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "unete__h2"
+        "unete__div--p"
+        "unete__div--img1"
+}
+
+.unete__h2 {
+    grid-area: unete__h2;
+    font-size: 1rem;
+    color: red;
+    margin: .0em .0em .7em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.unete__div--p {
+    grid-area: unete__div--p;
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: .8rem;
+    padding: 1em 1em;
+    background-color: rgb(233, 233, 233);
+    box-shadow: .7em .7em .7em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: .3em .7em;
+}
+
+.unete__div--img1 {
+    grid-area: unete__div--img1;
+    width: 100%;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+.unete__div--img2 {
+    grid-area: unete__div--img1;
+    width: 100%;
+    padding: .5em;
+    border-radius: 1em;
+    display: none;
+}
+
+/* @media(min-width:400px){ MOBILE*/
+
+@media only screen and (min-width:401px) {/*TABLET STYLE */
+
+    article {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "quienes aside"
+            "emprende aside"
+            "unete aside";
+    }
+
+    .form {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "alquilar comprar emprender"
+            "tipo ubicacion buscar";
+        margin: 0em .3em;
+    }
+
+    .form input {
+        margin: .2em;
+    }
+
+    .form button {
+        margin: .2em;
+    }
+
+    .imgheroe {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width:961px) {/*DESKTOP STYLE */
+
+    .form {
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "alquilar comprar emprender tipo ubicacion buscar";
+    }
+
+    .imgheroe {
+        height: 700px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "quienes aside"
+            "emprende aside"
+            "unete aside";
+        align-items: center
+    }
+
+    .quienes__div {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "quienes__h2 quienes__h2"
+            "quienes__div--p1 quienes__div--img1";
+        margin-top: 0rem;
+    }
+
+    .quienes__div--p1 {
+        text-align: left;
+    }
+
+    .emprende__div {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "emprende__h2 emprende__h2 emprende__h2"
+            "emprende__div--img1  emprende__div--p emprende__div--img2";
+        align-items: stretch;
+    }
+
+    .unete__div {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "unete__h2 unete__h2"
+            "unete__div--img1 unete__div--p";
+        align-items: center;
+    }
+
+    .emprende__div--img2 {
+        display: grid;
+    }
+
+    .emprende__div--p {
+        text-align: center;
+    }
+
+    .unete__div--p {
+        text-align: right;
+    }
+}
