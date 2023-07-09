@@ -1,17 +1,17 @@
 /*PROPIEDAD 1*/
 
-.propiedad1 h2 {
-    font-size: 50px;
+#propiedad__1 h2 {
+    font-size: 1.5rem;
     font-weight: bold;
     color: gray;
-    margin-top: 30px;
+    margin-top: .7em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 }
 
-.prop1 {
+.propiedad1__div {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -19,72 +19,78 @@
     flex-wrap: wrap;
 }
 
-.descripcabildo1 {
+.propiedad1__ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 30px;
-    margin-bottom: 50px;
+    margin: 0em;
+    padding: 0em;
 }
 
-.propiedad1 li {
+.propiedad1__ul li {
     list-style: none;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: .8rem;
 }
 
-.propiedad1 a {
-    font-size: 30px;
-    padding: 15px;
+.propiedad1__ul a {
+    font-size: .8rem;
+    padding: .5em;
+    border-radius: .5em;
     background-color: red;
     color: white;
 }
 
-.imgcab1 {
+.propiedad1__ul--img1 {
     width: 49.5%;
     padding: 3px;
 }
 
-.imgcab2 {
+.propiedad1__ul--img2 {
     width: 24.5%;
     padding: 3px;
 }
 
-.fondocab1 {
+.propiedad1__fondo {
     background-color: rgb(221, 221, 221);
-    height: 100px;
+    height: 75px;
 }
 
-.descripcabildo2 {
+.propiedad1__ul2{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
+    height: 75px;
+    
 }
 
-.preciocab1 {
+.propiedad1__ul2 li{
+    list-style: none;
+    font-size: .8rem;
+}
+.propiedad1__precio {
     color: red;
     font-weight: bold;
 }
 
+
 /*PROPIEDAD 2*/
 
-.propiedad2 h2 {
-    font-size: 50px;
+#propiedad__2 h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: gray;
-    margin-top: 30px;
+    margin-top: .7em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    font-weight: bold;
 }
 
-.prop2 {
+.propiedad2__div {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -92,55 +98,58 @@
     flex-wrap: wrap;
 }
 
-.descripechev1 {
+.propiedad2__ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 30px;
-    margin-bottom: 50px;
+    margin: 0em;
+    padding: 0em;
 }
 
-.propiedad2 li {
+.propiedad2__ul li {
     list-style: none;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: .8rem;
 }
 
-.propiedad2 a {
-    font-size: 30px;
-    margin-left: 1px;
-    padding: 15px;
+.propiedad2__ul a {
+    font-size: .8rem;
+    padding: .5em;
+    border-radius: .5em;
     background-color: red;
     color: white;
 }
 
-.imgechev1 {
+.propiedad2__ul--img1 {
     width: 49.5%;
     padding: 3px;
 }
 
-.imgechev2 {
-    width: 12.1%;
+.propiedad2__ul--img2 {
+    width: 24.5%;
     padding: 3px;
 }
 
-.fondoechev1 {
+.propiedad2__fondo {
     background-color: rgb(221, 221, 221);
-    height: 100px;
+    height: 75px;
 }
 
-.descripechev2 {
+.propiedad2__ul2{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
+    height: 75px;
 }
 
-.precioechev1 {
+.propiedad2__ul2 li{
+    list-style: none;
+    font-size: .8rem;
+}
+.propiedad2__precio {
     color: red;
     font-weight: bold;
 }

@@ -79,6 +79,7 @@ h1 {
  justify-content: center;
  margin: .5rem 0rem;
 background-image: url(/img/fondo.jpg);
+background-size: cover;
 }
 .carousel__img{
     max-width: 100%;
@@ -285,12 +286,13 @@ background-image: url(/img/fondo.jpg);
     }
 
     .form {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-            "alquilar comprar emprender"
-            "tipo ubicacion buscar";
-        margin: 0em .3em;
+            "alquilar comprar"
+            "emprender tipo" 
+            "ubicacion buscar";
+         margin: 0em .3em;
     }
 
     .form input {
