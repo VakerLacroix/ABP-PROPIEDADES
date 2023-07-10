@@ -824,6 +824,7 @@ h1 {
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .descripalto1 {
@@ -849,8 +850,11 @@ h1 {
 }
 
 .imgalto1 {
-  width: 47.5%;
-  padding: 3px;
+  width: 48.2%;
+  margin: .6em;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgalto2 {
@@ -859,9 +863,9 @@ h1 {
 }
 
 #emprende__1 p {
-  width: 95%;
+  width: 98%;
   padding: 1em;
-  margin-top: 1em;
+  margin: auto;
   text-align: justify;
   text-indent: 1em;
   font-size: .7rem;
