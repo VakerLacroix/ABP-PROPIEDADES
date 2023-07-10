@@ -1,14 +1,15 @@
 /*ALQUILER 1*/
 
 #alquiler1 h2 {
-    font-size: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: gray;
-    margin-top: 30px;
+    margin-top: .7em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    font-weight: bold;
+
 }
 
 .alqui1 {
@@ -22,23 +23,21 @@
 .descriptriun1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    height: 30px;
-    margin-bottom: 50px;
+    margin: 0em;
+    padding: 0em;
 }
 
 #alquiler1 li {
     list-style: none;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: .8rem;
 }
 
 .descriptriun1 a {
-    font-size: 30px;
-    margin-left: 1px;
-    padding: 15px;
+    font-size: .8rem;
+    padding: .5em;
+    border-radius: .5em;
     background-color: red;
     color: white;
 }
@@ -55,16 +54,16 @@
 
 .fondotriun1 {
     background-color: rgb(221, 221, 221);
-    height: 100px;
+    height: 75px;
 }
 
 .descriptriun2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
+    height: 75px;
 }
 
 .preciotriun1 {
@@ -75,14 +74,13 @@
 /*ALQUILER 2*/
 
 .alquiler2 h2 {
-    font-size: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: gray;
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    font-weight: bold;
 }
 
 .alqui2 {
@@ -96,23 +94,22 @@
 .descriplocal1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 30px;
-    margin-bottom: 50px;
+    margin: 0em;
+    padding: 0em;
 }
 
 .alquiler2 li {
     list-style: none;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: .8rem;
 }
 
 .descriplocal1 a {
-    font-size: 30px;
-    margin-left: 1px;
-    padding: 15px;
+    font-size: .8rem;
+    margin-left: .5em;
+    padding: .5em;
     background-color: red;
     color: white;
 }
@@ -129,16 +126,16 @@
 
 .fondolocal1 {
     background-color: rgb(221, 221, 221);
-    height: 100px;
+    height: 75px;
 }
 
 .descriplocal2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
+    height: 75px;
 }
 
 .preciolocal1 {

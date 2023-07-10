@@ -1,4 +1,3 @@
-
 h1 {
     text-align: center;
     font-size: 1.2rem;
@@ -73,15 +72,17 @@ h1 {
         "unete";
     margin: .5rem 0rem;
 }
+
 .imgheroe {
- display: flex;
- align-content: center;
- justify-content: center;
- margin: .5rem 0rem;
-background-image: url(/img/fondo.jpg);
-background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: .5rem 0rem;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
 }
-.carousel__img{
+
+.carousel__img {
     max-width: 100%;
 }
 
@@ -273,7 +274,8 @@ background-size: cover;
 
 /* @media(min-width:400px){ MOBILE*/
 
-@media only screen and (min-width:401px) {/*TABLET STYLE */
+@media only screen and (min-width:401px) {
+    /*TABLET STYLE */
 
     article__index {
         display: grid;
@@ -290,9 +292,9 @@ background-size: cover;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "alquilar comprar"
-            "emprender tipo" 
+            "emprender tipo"
             "ubicacion buscar";
-         margin: 0em .3em;
+        margin: 0em .3em;
     }
 
     .form input {
@@ -304,7 +306,8 @@ background-size: cover;
     }
 }
 
-@media only screen and (min-width:961px) {/*DESKTOP STYLE */
+@media only screen and (min-width:961px) {
+    /*DESKTOP STYLE */
 
     .form {
         grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
@@ -312,6 +315,7 @@ background-size: cover;
         grid-template-areas:
             "alquilar comprar emprender tipo ubicacion buscar";
     }
+
     .article__index {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -332,9 +336,11 @@ background-size: cover;
             "quienes__div--p1 quienes__div--img1";
         margin-top: 0rem;
     }
-.article p{
-    font-size: 1rem;
-}
+
+    .article p {
+        font-size: 1rem;
+    }
+
     .quienes__div--p1 {
         text-align: left;
     }

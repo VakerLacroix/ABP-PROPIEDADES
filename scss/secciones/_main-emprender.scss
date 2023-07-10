@@ -1,10 +1,9 @@
 /*EMPRENDIMIENTO 1*/
 
 #emprende__1 h2 {
-    font-size: 50px;
+    font-size: 1.5rem;
     color: gray;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: .7em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -16,36 +15,35 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .descripalto1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 30px;
-    margin-bottom: 50px;
+    margin: 0em;
+    padding: 0em;
+
 }
 
 #emprende__1 li {
     list-style: none;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: .8rem;
 }
 
 .descripalto1 a {
-    font-size: 30px;
-    margin-left: 1px;
-    padding: 15px;
+    font-size: .8rem;
+    padding: .5em;
     background-color: red;
     color: white;
 }
 
 .imgalto1 {
-    width: 49.5%;
+    width: 45.5%;
     padding: 3px;
 }
 
@@ -55,12 +53,12 @@
 }
 
 #emprende__1 p {
-    width: 47%;
-    padding: 25px;
-    padding-top: 55px;
-    text-align: justify;
-    text-indent: 20px;
-    font-size: 20px;
+    width: 54%;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: left;
+    text-indent: 1em;
+    font-size: .7rem;
     background-color: rgb(233, 233, 233);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
