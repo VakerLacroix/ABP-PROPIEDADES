@@ -5,11 +5,7 @@
     grid-template-rows: auto;
     grid-template-areas:
         "logo nav";
-    position: fixed ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+
     
 }
 
@@ -68,6 +64,10 @@ button.navbar-toggler {
     padding: .2em;
 }
 
+.header a:hover{
+    color: $color-7;
+}
+
 .header__ul {
     grid-area: redes;
     display: flex;
@@ -89,7 +89,7 @@ button.navbar-toggler {
 }
 
 .redes__ul li img {
-    width: 1.5rem;
+    width: 1.5em;
 }
 
 /* @media(min-width:400px){ MOBILE*/
