@@ -12,11 +12,12 @@ $font-xxl: 3rem !default;     /* 48px */
 
 /* FONT WEIGHTS */
 $font-normal: 100 !default;
-$font-medium: 400 !default;
-$font-bold: 1000 !default;
+$font-medium: 500 !default;
+$font-bold: 700 !default;
 
 
 /* COLORS */
+$color-0: #ffffff !default;
 $color-1: #F2EFDF !default;
 $color-2: #D0D9D4 !default;
 $color-3: #AEBFBE !default;
@@ -26,8 +27,114 @@ $color-6: #ec0000 !default;
 $color-7: #000000 !default;
 
 
-/** SHADOWS */
+/* SHADOWS */
 
 $shadow-s: 0 1px 2px 0 rgb;
 $shadow-me: 0 4px 6px -1px rgb;
 $shadow-l: 0 10px 15px -3px rgb;
+
+/* BUTTONS */
+@mixin buttons{
+border-radius: .5em;
+padding: .5em;
+
+/* CARDS */
+}
+@mixin cards{
+text-align: justify;
+text-indent: 1.5rem;
+font-size: .8rem;
+padding: 1em 1em;
+background-color: $color-1;
+box-shadow: .7em .7em .7em $color-7(0, 0, 0, 0.2);
+border-radius: 1em;
+margin: .3em .7em;
+align-items: center;
+font-weight: $font-medium;
+}
+
+
+/*H2*/
+
+@mixin h2 ($color-5, $font-s){
+font-size: $font-s;
+font-weight: bold;
+margin: .7em auto .1em auto;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+color: $color-5;
+}
+
+@mixin propiedad__h2 {
+    @include h2 ($color-7, $font-l);
+    margin-top: .7em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@mixin propiedad__div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+@mixin propiedad__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0em;
+    padding: 0em;
+}
+
+@mixin propiedad__li {
+    list-style: none;
+    font-size: $font-xs;
+}
+
+@mixin propiedad__a {
+    font-size: $font-xs;
+    @include buttons;
+    background-color: $color-6;
+    color: $color-0;
+}
+
+@mixin propiedad__img1 {
+    width: 50%;
+    padding: .2em;
+}
+
+@mixin propiedad__img2 {
+    width: 25%;
+    padding: .2em;
+}
+
+@mixin propiedad__fondo {
+    background-color: $color-2;
+    height: 50px;
+    margin: 0em .2em;
+}
+
+@mixin propiedad__ul2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+    margin: 0em;
+    padding: 0em .2em;
+}
+
+@mixin propiedad__precio {
+    color: $color-6;
+    font-weight: $font-medium;
+}

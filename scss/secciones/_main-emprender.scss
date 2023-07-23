@@ -1,17 +1,22 @@
-/*EMPRENDIMIENTO 1*/
+.article__alquilar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "emprender__1"
+        "emprender__2";
+    margin: .5em .5em;
+}
+/*EMPRENDER1*/
 
-#emprende__1 h2 {
-    font-size: 1.5rem;
-    color: gray;
-    margin-top: .7em;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    font-weight: bold;
+#emprender__1{
+    grid-area: emprender__1;
+}
+#emprender__1 h2 {
+    @include propiedad__h2;
 }
 
-.empre1 {
+.emprender1__div{
     display: flex;
     flex-direction: row;
     align-content: center;

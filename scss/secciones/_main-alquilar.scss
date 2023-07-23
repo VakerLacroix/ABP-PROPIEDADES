@@ -1,144 +1,129 @@
-/*ALQUILER 1*/
-
-#alquiler1 h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: gray;
-    margin-top: .7em;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-
+.article__alquilar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "alquilar__1"
+        "alquilar__2";
+    margin: .5em .5em;
 }
 
-.alqui1 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+/*ALQUILAR 1*/
+
+#alquilar__1{
+    grid-area: alquilar__1;
 }
 
-.descriptriun1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0em;
-    padding: 0em;
+#alquilar__1 h2 {
+    @include propiedad__h2;
 }
 
-#alquiler1 li {
-    list-style: none;
-    font-size: .8rem;
+.alquilar1__div {
+    @include propiedad__div;
 }
 
-.descriptriun1 a {
-    font-size: .8rem;
-    padding: .5em;
-    border-radius: .5em;
-    background-color: red;
-    color: white;
+.alquilar1__ul {
+    @include propiedad__ul;
 }
 
-.imgtriun1 {
-    width: 48%;
-    padding: 3px;
+.alquilar1__ul li {
+    @include propiedad__li;
 }
 
-.imgtriun2 {
-    width: 25%;
-    padding: 3px;
+.alquilar1__ul a{
+    @include propiedad__a;
 }
 
-.fondotriun1 {
-    background-color: rgb(221, 221, 221);
-    height: 75px;
+.alquilar1__img1 {
+    @include propiedad__img1;
 }
 
-.descriptriun2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 75px;
+.alquilar1__img2 {
+    @include propiedad__img2;
 }
 
-.preciotriun1 {
+.alquilar1__fondo {
+    @include propiedad__fondo;
+}
+
+.alquilar1__ul2{
+    @include propiedad__ul2;
+}
+
+.alquilar1__ul2 li {
+    @include propiedad__li;
+}
+
+.alquilar1__precio {
     color: red;
-    font-weight: bold;
+    @include propiedad__precio;
 }
 
-/*ALQUILER 2*/
 
-.alquiler2 h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: gray;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+
+/*ALQUILaR 2*/
+
+#alquilar__2{
+    grid-area: alquilar__2;
 }
 
-.alqui2 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+#alquilar__2 h2 {
+    @include propiedad__h2;
 }
 
-.descriplocal1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0em;
-    padding: 0em;
+.alquilar2__div {
+    @include propiedad__div;
 }
 
-.alquiler2 li {
-    list-style: none;
-    font-size: .8rem;
+.alquilar2__ul {
+    @include propiedad__ul;
 }
 
-.descriplocal1 a {
-    font-size: .8rem;
-    margin-left: .5em;
-    padding: .5em;
-    background-color: red;
-    color: white;
+.alquilar2__ul li {
+    @include propiedad__li;
 }
 
-.imglocalcab1 {
-    width: 48%;
-    padding: 3px;
+.alquilar2__ul a{
+    @include propiedad__a;
 }
 
-.imglocalcab2 {
-    width: 25%;
-    padding: 3px;
+.alquilar2__img1 {
+    @include propiedad__img1;
 }
 
-.fondolocal1 {
-    background-color: rgb(221, 221, 221);
-    height: 75px;
+.alquilar2__img2 {
+    @include propiedad__img2;
 }
 
-.descriplocal2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 75px;
+.alquilar2__fondo {
+    @include propiedad__fondo;
 }
 
-.preciolocal1 {
+.alquilar2__ul2{
+    @include propiedad__ul2;
+}
+
+.alquilar2__ul2 li {
+    @include propiedad__li;
+}
+
+.alquilar2__precio {
     color: red;
-    font-weight: bold;
+    @include propiedad__precio;
+}
+
+/* @media(min-width:400px){ MOBILE*/
+
+    @media only screen and (min-width:401px) {
+        /*TABLET STYLE */
+
+    .article__alquilar {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "alquilar__1 aside"
+        "alquilar__2 aside"
+        ". aside";
+    }
 }
