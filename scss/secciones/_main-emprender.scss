@@ -1,68 +1,130 @@
-/*EMPRENDIMIENTO 1*/
-
-#emprende__1 h2 {
-    font-size: 1.5rem;
-    color: gray;
-    margin-top: .7em;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    font-weight: bold;
+.article__emprender {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "emprender__1"
+        "emprender__2";
+    margin: .5em .5em;
 }
 
-.empre1 {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+/*EMPRENDER1*/
+
+#emprender__1 {
+    grid-area: emprender__1;
 }
 
-.descripalto1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0em;
-    padding: 0em;
-
+#emprender__1 h2 {
+    @include propiedad__h2;
 }
 
-#emprende__1 li {
-    list-style: none;
-    font-size: .8rem;
+.emprender1__ul {
+    @include propiedad__ul;
 }
 
-.descripalto1 a {
-    font-size: .8rem;
-    padding: .5em;
-    background-color: red;
-    color: white;
+#emprender__1 li {
+    @include propiedad__li;
 }
 
-.imgalto1 {
-    width: 48.2%;
-    margin: .6em;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+.emprender1__ul a {
+    @include propiedad__a;
 }
 
-.imgalto2 {
-    width: 24.5%;
-    padding: 3px;
+.emprender1__div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "emprender1__p emprender1__p"
+        "emprender1__img1 emprender1__img1"
+        "emprender1__div2 emprender1__div2";
 }
 
-#emprende__1 p {
-    width: 98%;
-    padding: 1em;
+.emprender1__img1 {
+    grid-area: emprender1__img1;
+    width: 100%;
+    padding: .2em 1em;
     margin: auto;
-    text-align: justify;
-    text-indent: 1em;
-    font-size: .7rem;
-    background-color: rgb(233, 233, 233);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.emprender1__p {
+    grid-area: emprender1__p;
+    @include cards;
+}
+
+.emprender1__div2 {
+    grid-area: emprender1__div2;
+    @include propiedad__div;
+}
+
+.emprender1__img2 {
+    @include propiedad__img2;
+}
+
+/*EMPRENDER1*/
+
+#emprender__2 {
+    grid-area: emprender__2;
+}
+
+#emprender__2 h2 {
+    @include propiedad__h2;
+}
+
+.emprender2__ul {
+    @include propiedad__ul;
+}
+
+#emprender__2 li {
+    @include propiedad__li;
+}
+
+.emprender2__ul a {
+    @include propiedad__a;
+}
+
+.emprender2__div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "emprender2__p emprender2__p"
+        "emprender2__img1 emprender2__img1"
+        "emprender2__div2 emprender2__div2";
+}
+
+.emprender2__img1 {
+    grid-area: emprender2__img1;
+    width: 100%;
+    padding: .2em;
+    margin: auto;
+}
+
+.emprender2__p {
+    grid-area: emprender2__p;
+    @include cards;
+}
+
+.emprender2__div2 {
+    grid-area: emprender2__div2;
+    @include propiedad__div;
+}
+
+.emprender2__img2 {
+    @include propiedad__img2;
+}
+
+/* @media(min-width:400px){ MOBILE*/
+
+@media only screen and (min-width:401px) {
+    /*TABLET STYLE */
+
+    .article__emprender {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "emprender__1 aside"
+            "emprender__2 aside"
+            ". aside";
+    }
 }

@@ -1,60 +1,102 @@
-.formatocontactos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.contactanos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        " contactanos__form"
+        "mapa";
+    margin: .5em .5em;
+    align-items: center
 }
 
-.contactanos {
+.contactanos__form {
+    grid-area: contactanos__form;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: .7em;
-    background-color: rgb(233, 233, 233);
-    width: auto
+    padding: 1em .7em;
+    background-color: $color-1;
+    box-shadow: .7em .7em .7em $color-7(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: .3em .7em;
 }
 
-.contactanos div {
-    font-size: 1.5rem;
-    color: gray;
-    margin-bottom: 0px;
+.contactanos h2 {
+    @include h2 ($color-5, $font-s)
 }
 
 .contactanos p {
-    font-size: .8rem;
-    width: 45%;
+    font-size: $font-xs;
     text-align: center;
     margin: .7em;
 }
 
 .contactanos input {
+    font-size: $font-xs;
+    border-radius: .5em;
     padding: .5em;
-    font-size: .8rem;
-    margin-bottom: .7em;
-    width: 45%;
-    overflow: visible;
+    color: $color-0;
+    margin-top: .7em;
+    width: 70%;
 }
 
-.formcontactos {
-    height: auto;
+.input__text {
+    border-radius: .5em;
     padding: .5em;
+    color: $color-0;
+    width: 70%;
 }
 
-.botonformulario {
-    background-color: red;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
+.input__submit {
+    border-radius: .5em;
+    padding: .5em;
+    background-color: $color-6;
+    color: $color-0;
+    width: 70%;
 }
 
-.formatocontactos img {
-    width: 45%;
-    margin: .01em;
+.contactanos__img {
+    grid-area: contactanos__img;
+    display: none;
+}
+
+.contactanos img {
+    width: 100%;
+}
+
+.logo__contactanos {
+    grid-area: logo__contactanos;
+    display: none;
 }
 
 .mapa {
-    width: 100%;
+    grid-area: mapa;
+}
+
+@media only screen and (min-width:401px) {
+    /*DESKTOP STYLE */
+
+    .contactanos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "contactanos__form contactanos__img "
+            "logo__contactanos contactanos__img"
+            "mapa mapa";
+    }
+
+    .contactanos__img {
+        display: grid;
+    }
+
+    .logo__contactanos {
+        display: grid;
+    }
+
+    .logo__contactanos img {
+        width: 40%;
+        margin: auto;
+    }
 }

@@ -1,5 +1,5 @@
 .footer {
-    background-color: gray;
+    background: linear-gradient(to right, $color-5, $color-4, $color-3);
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto;
@@ -29,8 +29,11 @@
 }
 
 .footer a {
-    color: white;
-    text-decoration: none;
+    color: $color-1;
+}
+
+.footer a:hover {
+    color: $color-7;
 }
 
 .footer li {
@@ -39,7 +42,8 @@
 }
 
 .footer__nro {
-    color: red;
+    color: $color-7;
+    margin: auto, 0px;
 
 }
 
