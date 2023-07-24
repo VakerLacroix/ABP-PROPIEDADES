@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "logo nav";    
+        "logo nav";
 }
 
 .logo {
@@ -17,7 +17,7 @@
 }
 
 button.navbar-toggler {
-      background-color: $color-1;
+    background-color: $color-1;
     --bs-gutter-x: .5em;
     --bs-navbar-toggler-padding-x: .7em;
     --bs-navbar-toggler-font-size: .7em;
@@ -47,8 +47,8 @@ button.navbar-toggler {
 }
 
 .header__nav--a {
- @include buttons;
- border: .2em solid $color-1;
+    @include buttons;
+    border: .2em solid $color-1;
 }
 
 .header li {
@@ -62,7 +62,7 @@ button.navbar-toggler {
     padding: .2em;
 }
 
-.header a:hover{
+.header a:hover {
     color: $color-7;
 }
 

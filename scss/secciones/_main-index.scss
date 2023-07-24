@@ -216,9 +216,11 @@ h1 {
     padding: .5em;
     border-radius: 1em;
 }
+
 .consigna {
     display: none;
 }
+
 /* @media(min-width:400px){ MOBILE*/
 
 @media only screen and (min-width:401px) {
@@ -278,16 +280,19 @@ h1 {
             "consigna aside";
         align-items: center
     }
+
     .consigna {
         grid-area: consigna;
         display: flex;
         justify-content: space-evenly;
     }
+
     .consigna img {
         max-width: 15%;
         padding: .1em;
     }
-    .consigna ul{
+
+    .consigna ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -297,11 +302,15 @@ h1 {
         margin: auto .5em;
         box-shadow: .7em .7em .7em $color-7(0, 0, 0, 0.2);
     }
-    .consigna li{
-        font-size: $font-l; 
+
+    .consigna li {
+        font-size: $font-l;
         font-weight: $font-medium;
         margin: .5em 1em;
+        transform: translate x(3em);
+        transition: 3s;
     }
+
     .quienes__div {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -310,6 +319,7 @@ h1 {
             "quienes__h2 quienes__h2"
             "quienes__div--p1 quienes__div--img1";
     }
+
     .article p {
         font-size: 1rem;
     }

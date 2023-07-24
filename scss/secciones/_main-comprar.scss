@@ -10,9 +10,10 @@
 
 /*PROPIEDAD 1*/
 
-#propiedad__1{
+#propiedad__1 {
     grid-area: propiedad__1;
 }
+
 #propiedad__1 h2 {
     @include propiedad__h2;
 }
@@ -61,7 +62,7 @@
 
 /*PROPIEDAD 2*/
 
-#propiedad__2{
+#propiedad__2 {
     grid-area: propiedad__2;
 }
 
@@ -108,18 +109,18 @@
 .propiedad2__precio {
     @include propiedad__precio;
 }
+
 /* @media(min-width:400px){ MOBILE*/
 
-    @media only screen and (min-width:401px) {
-        /*TABLET STYLE */
+@media only screen and (min-width:401px) {
+    /*TABLET STYLE */
 
-        .article__comprar {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: auto auto auto;
-            grid-template-areas:
-                "propiedad__1 aside"
-                "propiedad__2 aside"
-                ". aside";
-        }
+    .article__comprar {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "propiedad__1 aside"
+            "propiedad__2 aside"
+            ". aside";
     }
+}

@@ -10,7 +10,7 @@
 
 /*ALQUILAR 1*/
 
-#alquilar__1{
+#alquilar__1 {
     grid-area: alquilar__1;
 }
 
@@ -30,7 +30,7 @@
     @include propiedad__li;
 }
 
-.alquilar1__ul a{
+.alquilar1__ul a {
     @include propiedad__a;
 }
 
@@ -46,7 +46,7 @@
     @include propiedad__fondo;
 }
 
-.alquilar1__ul2{
+.alquilar1__ul2 {
     @include propiedad__ul2;
 }
 
@@ -55,7 +55,6 @@
 }
 
 .alquilar1__precio {
-    color: red;
     @include propiedad__precio;
 }
 
@@ -63,7 +62,7 @@
 
 /*ALQUILaR 2*/
 
-#alquilar__2{
+#alquilar__2 {
     grid-area: alquilar__2;
 }
 
@@ -83,7 +82,7 @@
     @include propiedad__li;
 }
 
-.alquilar2__ul a{
+.alquilar2__ul a {
     @include propiedad__a;
 }
 
@@ -99,7 +98,7 @@
     @include propiedad__fondo;
 }
 
-.alquilar2__ul2{
+.alquilar2__ul2 {
     @include propiedad__ul2;
 }
 
@@ -108,22 +107,20 @@
 }
 
 .alquilar2__precio {
-    color: red;
     @include propiedad__precio;
 }
 
 /* @media(min-width:400px){ MOBILE*/
 
-    @media only screen and (min-width:401px) {
-        /*TABLET STYLE */
+@media only screen and (min-width:401px) {
+    /*TABLET STYLE */
 
     .article__alquilar {
-        display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
-        "alquilar__1 aside"
-        "alquilar__2 aside"
-        ". aside";
+            "alquilar__1 aside"
+            "alquilar__2 aside"
+            ". aside";
     }
 }
