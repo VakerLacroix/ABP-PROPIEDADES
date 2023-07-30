@@ -1,6 +1,9 @@
 .aside {
     grid-area: aside;
     display: none;
+    background-color: $color-1;
+    border-radius: .5em;
+    padding: .3em;
 }
 
 .section_aside {
@@ -10,7 +13,8 @@
     grid-template-areas:
         "aside__1"
         "aside__2"
-        "aside__3";
+        "aside__3"
+        "aside__4";
     align-content: spa;
     align-items: center;
 }
@@ -23,8 +27,12 @@
     grid-area: aside__2;
 }
 
-.aside__comprar3 {
+.aside__3 {
     grid-area: aside__3;
+}
+
+.aside__4 {
+    grid-area: aside__4;
 }
 
 .aside__div {
@@ -36,9 +44,9 @@
         "aside__ul";
     justify-items: center;
     background-color: $color-2;
-    box-shadow: .7em .7em .7em $color-7(0, 0, 0, 0.2);
+    box-shadow: $shadow;
     border-radius: .5em;
-    margin: .3em .7em;
+    margin: .3em .3em;
 }
 
 .aside__img {
@@ -46,7 +54,6 @@
     width: 100%;
     background-image: cover;
     padding: 1em 1em .3em 1em;
-
 }
 
 .aside__ul {
@@ -59,16 +66,15 @@
     padding: .3em 0em.5em 0em;
     font-weight: $font-medium;
 
-}
-
-.aside__ul li {
-    font-size: $font-xs;
-    padding: .0em .0em;
-    text-align: center;
+    li {
+        font-size: $font-s;
+        padding: .0em .0em;
+        text-align: center;
+    }
 }
 
 .aside__a {
-    font-size: $font-xs;
+    font-size: $font-s;
     font-weight: $font-medium;
     text-decoration: none;
     background-color: $color-6;

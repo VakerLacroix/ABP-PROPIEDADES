@@ -3,31 +3,36 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
+        "h1"
         "emprender__1"
         "emprender__2";
     margin: .5em .5em;
+}
+
+.h1__pages {
+    @include h1__pages;
 }
 
 /*EMPRENDER1*/
 
 #emprender__1 {
     grid-area: emprender__1;
-}
 
-#emprender__1 h2 {
-    @include propiedad__h2;
+    h2 {
+        @include propiedad__h2;
+    }
+
+    li {
+        @include propiedad__li;
+    }
+
+    a {
+        @include propiedad__a;
+    }
 }
 
 .emprender1__ul {
     @include propiedad__ul;
-}
-
-#emprender__1 li {
-    @include propiedad__li;
-}
-
-.emprender1__ul a {
-    @include propiedad__a;
 }
 
 .emprender1__div {
@@ -65,22 +70,22 @@
 
 #emprender__2 {
     grid-area: emprender__2;
-}
 
-#emprender__2 h2 {
-    @include propiedad__h2;
+    h2 {
+        @include propiedad__h2;
+    }
+
+    li {
+        @include propiedad__li;
+    }
+
+    a {
+        @include propiedad__a;
+    }
 }
 
 .emprender2__ul {
     @include propiedad__ul;
-}
-
-#emprender__2 li {
-    @include propiedad__li;
-}
-
-.emprender2__ul a {
-    @include propiedad__a;
 }
 
 .emprender2__div {
@@ -123,8 +128,25 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
+            "h1 aside"
             "emprender__1 aside"
             "emprender__2 aside"
             ". aside";
+    }
+    #emprender__1 {
+        li {
+            font-size: $font-s;
+        }
+        a {
+            font-size: $font-s;
+        }
+    }
+    #emprender__2{
+        li {
+            font-size: $font-s;
+        }
+        a {
+            font-size: $font-s;
+        }
     }
 }

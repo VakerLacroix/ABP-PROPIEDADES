@@ -5,17 +5,30 @@
     grid-template-rows: auto;
     grid-template-areas:
         "nav redes";
-}
 
-.footer ul {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: .7em;
-    margin: .0em;
+    ul {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .7em;
+        margin: .0em;
+    }
+
+    a {
+        color: $color-1;
+    }
+
+    a:hover {
+        color: $color-7;
+    }
+
+    li {
+        font-size: $font-xs;
+        padding: .1em .3em;
+    }
 }
 
 .footer__redes--ul {
@@ -28,25 +41,27 @@
     margin: 0em 0em;
 }
 
-.footer a {
-    color: $color-1;
-}
-
-.footer a:hover {
-    color: $color-7;
-}
-
-.footer li {
-    font-size: .8rem;
-    padding: .1em .3em;
-}
-
 .footer__nro {
     color: $color-7;
     margin: auto, 0px;
-
 }
 
-.footer__redes--ul img {
-    width: 1.5rem;
+.footer__redes--ul {
+    img {
+        width: 1.5em;
+    }
+}
+
+/* @media(min-width:400px){ MOBILE*/
+
+@media only screen and (min-width:401px) {
+
+    /*TABLET STYLE */
+    .footer {
+        ul {
+            li {
+                font-size: $font-s;
+            }
+        }
+    }
 }

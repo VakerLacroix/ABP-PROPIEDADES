@@ -1,21 +1,26 @@
 .article__alquilar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
+        "h1"
         "alquilar__1"
         "alquilar__2";
     margin: .5em .5em;
+}
+
+.h1__pages {
+    @include h1__pages;
 }
 
 /*ALQUILAR 1*/
 
 #alquilar__1 {
     grid-area: alquilar__1;
-}
 
-#alquilar__1 h2 {
-    @include propiedad__h2;
+    h2 {
+        @include propiedad__h2;
+    }
 }
 
 .alquilar1__div {
@@ -24,14 +29,14 @@
 
 .alquilar1__ul {
     @include propiedad__ul;
-}
 
-.alquilar1__ul li {
-    @include propiedad__li;
-}
+    li {
+        @include propiedad__li;
+    }
 
-.alquilar1__ul a {
-    @include propiedad__a;
+    a {
+        @include propiedad__a;
+    }
 }
 
 .alquilar1__img1 {
@@ -48,26 +53,24 @@
 
 .alquilar1__ul2 {
     @include propiedad__ul2;
-}
 
-.alquilar1__ul2 li {
-    @include propiedad__li;
+    li {
+        @include propiedad__li;
+    }
 }
 
 .alquilar1__precio {
     @include propiedad__precio;
 }
 
-
-
 /*ALQUILaR 2*/
 
 #alquilar__2 {
     grid-area: alquilar__2;
-}
 
-#alquilar__2 h2 {
-    @include propiedad__h2;
+    h2 {
+        @include propiedad__h2;
+    }
 }
 
 .alquilar2__div {
@@ -76,14 +79,14 @@
 
 .alquilar2__ul {
     @include propiedad__ul;
-}
 
-.alquilar2__ul li {
-    @include propiedad__li;
-}
+    li {
+        @include propiedad__li;
+    }
 
-.alquilar2__ul a {
-    @include propiedad__a;
+    a {
+        @include propiedad__a;
+    }
 }
 
 .alquilar2__img1 {
@@ -100,10 +103,10 @@
 
 .alquilar2__ul2 {
     @include propiedad__ul2;
-}
 
-.alquilar2__ul2 li {
-    @include propiedad__li;
+    li {
+        @include propiedad__li;
+    }
 }
 
 .alquilar2__precio {
@@ -117,10 +120,28 @@
 
     .article__alquilar {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
+            "h1 aside"
             "alquilar__1 aside"
             "alquilar__2 aside"
             ". aside";
+    }
+
+    #alquilar__1 {
+        li {
+            font-size: $font-s;
+        }
+        a {
+            font-size: $font-s;
+        }
+    }
+    #alquilar__2{
+        li {
+            font-size: $font-s;
+        }
+        a {
+            font-size: $font-s;
+        }
     }
 }

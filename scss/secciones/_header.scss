@@ -5,6 +5,20 @@
     grid-template-rows: auto;
     grid-template-areas:
         "logo nav";
+
+    li {
+        font-size: $font-xs;
+        padding: .1em .3em;
+    }
+
+    a {
+        color: $color-1;
+        padding: .2em;
+    }
+
+    a:hover {
+        color: $color-7;
+    }
 }
 
 .logo {
@@ -13,7 +27,8 @@
     height: 100%;
     object-fit: cover;
     margin: auto;
-
+    transition: 2s;
+    transform: rotateY(380deg);
 }
 
 button.navbar-toggler {
@@ -51,21 +66,6 @@ button.navbar-toggler {
     border: .2em solid $color-1;
 }
 
-.header li {
-    font-size: $font-xs;
-    padding: .1em .3em;
-}
-
-.header a {
-    color: $color-1;
-    text-decoration: none;
-    padding: .2em;
-}
-
-.header a:hover {
-    color: $color-7;
-}
-
 .header__ul {
     grid-area: redes;
     display: flex;
@@ -84,10 +84,12 @@ button.navbar-toggler {
     padding: .5em;
     display: none;
     margin: 0em 0em;
-}
 
-.redes__ul li img {
-    width: 1.5rem;
+    li {
+        img {
+            width: 1.5rem;
+        }
+    }
 }
 
 /* @media(min-width:400px){ MOBILE*/
@@ -95,8 +97,14 @@ button.navbar-toggler {
 @media only screen and (min-width:401px) {
 
     /*TABLET STYLE */
-    .header__nav--ul a {
-        margin: 1.5em;
+    .header__nav--ul {
+        a {
+            margin: 1.5em;
+        }
+
+        li {
+            font-size: $font-s;
+        }
     }
 
     .header {
